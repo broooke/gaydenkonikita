@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  margin: 25px 0;
+  position: fixed;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 35px;
+}
+
+.name {
+  display: inline-block;
+  position: relative;
+}
+
+.menu {
+  text-align: right;
+
+  li {
+    transition: all .1s ease-in;
+    letter-spacing: 0px;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  li:hover {
+    cursor: pointer;
+    letter-spacing: 3px;
+  }
+}

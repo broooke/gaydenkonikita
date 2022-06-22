@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "GrtskMega";
+  src: url("../public/GrtskMega-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  font-family: "GrtskMega";
+  background-color: #151515;
+  color: #FFFFFF;
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 150px;
+  position: relative;
+}

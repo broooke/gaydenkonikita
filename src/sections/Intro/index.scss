@@ -1,0 +1,69 @@
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.intro-container {
+  width: 100%;
+  position: relative;
+}
+
+.intro-wrapper {
+  height: 80vh;
+
+  .bg-intro {
+    position: absolute;
+    max-height: 90%;
+    object-fit: contain;
+    top: 65%;
+    left: 50%;
+    z-index: 2;
+  }
+
+  .scroll-intro {
+    position: absolute;
+    object-fit: contain;
+    top: 15%;
+    left: 65%;
+    z-index: 5;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .intro-text {
+    position: absolute;
+    top: 35%;
+
+    &:first-of-type {
+      z-index: 1;
+    }
+
+    &:last-of-type {
+      z-index: 3;
+    }
+
+    h1 {
+      line-height: 110%;
+      font-size: 5.1vw;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+
+      &.intro-text-outline {
+        -webkit-text-stroke: 3px #FFFFFF;
+        text-stroke: 1px #FFFFFF;
+        color: transparent;
+      }
+
+      &:last-of-type {
+        margin-left: -30%;
+      }
+    }
+  }
+}
